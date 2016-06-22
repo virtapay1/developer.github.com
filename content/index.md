@@ -1,43 +1,42 @@
 ---
-title: GitHub API
+title: GitHub Developer
+layout: overview
+hide_from_search: true
 ---
 
-# The GitHub API
+<div class="wrapper feature">
+  <h1>
+    Leverage the power of<br />
+    GitHub in your app.
+  </h1>
+  <p class="intro">Get started with one of our guides, or jump straight into the API documentation.</p>
+  <a href="/v3/" class="button">Browse the documentation</a>
+  <img src="/assets/images/rocketship.png" class="rocketship" alt="Rocketship" />
+</div>
 
-This describes the resources that make up the official GitHub API v3. If
-you have any problems or requests please contact
-[support](mailto:support@github.com?subject=APIv3).
+<div class="full-width dev-program-callout">
+  <div class="wrapper">
+    <h2>Join the GitHub Developer Program.</h2>
+    <p>The best way to integrate with GitHub. <a href="/program/">Learn more</a>.</p>
+  </div>
+</div>
 
-For the new API v3, start browsing the resources on the right >>
-
-## Breaking BETA Changes
-
-We're making some small tweaks to the API during the BETA phase.  Old
-behavior will be supported until the dates listed below. Please be sure
-to update your app in time.
-
-### Behavior due to be removed by July 20th:
-
-* `integrate_branch` on the [repo API](/v3/repos/#get) will no longer be
-  returned.
-
-### Changelog for breaking changes
-
-#### Removed on June 15th:
-
-* `gravatar_url` is being deprecated in favor of `avatar_url` for all
-  responses that include users or orgs. A default size is no longer
-  included in the url.
-* Creating new gists (both anonymously and with an authenticated user)
-  should use `POST /gists` from now on. `POST /users/:user/gists` is no
-  longer supported.
-
-#### Removed on June 1st:
-
-* Removed support for PUT verb on update requests. Use POST or PATCH
-  instead.
-* Removed `.json` extension from all URLs.
-* No longer using the X-Next or X-Last headers. Pagination info is
-  returned in the Link header instead.
-* JSON-P response has completely changed to a more consistent format.
-* Starring gists now uses PUT verb (instead of POST) and returns 204.
+<div class="full-width-divider">
+  <ul class="wrapper highlights">
+    <li class="highlight-module">
+      <a href="/guides/"><span class="mega-octicon octicon-file-text"></span></a>
+      <h2><a href="/guides/">Get Started</a></h2>
+      <p>New to the GitHub API? With these guides you’ll be up and running in a snap.</p>
+    </li>
+    <li class="highlight-module">
+      <a href="/libraries/"><span class="mega-octicon octicon-code"></span></a>
+      <h2><a href="/libraries/">Libraries</a></h2>
+      <p>We’ve got you covered. Use the GitHub API in your favorite language.</p>
+    </li>
+    <li class="highlight-module">
+      <a href="http://github.com/contact"><span class="mega-octicon octicon-mail-read"></span></a>
+      <h2><a href="http://github.com/contact">Support</a></h2>
+      <p>Are you stuck? Already tried our <a href="/v3/troubleshooting/">troubleshooting guide</a>? Talk to a supportocat.</p>
+    </li>
+  </ul>
+</div>
